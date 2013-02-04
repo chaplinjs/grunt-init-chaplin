@@ -131,7 +131,9 @@ exports.template = function(grunt, init, done) {
 
     case 'coffee':
       devDependencies['grunt-contrib-coffee'] = '0.4.0rc7';
-      devDependencies['grunt-coffeelint'] = '0.0.x';
+      devDependencies['grunt-coffeelint'] =
+        // NPM seems to be out-dated; master works with grunt 0.4.x
+        'git://github.com/vojtajina/grunt-coffeelint.git';
       break;
     }
 
