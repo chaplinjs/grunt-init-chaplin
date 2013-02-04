@@ -1,0 +1,14 @@
+# Directory that NPM stores downloaded components.
+/node_modules
+
+# Temporary directory where files are built.
+/temp
+
+# Final directory where the complete distributable project is placed.
+/build
+
+# Directory that bower stores downloaded components.
+components
+
+# Generated from compiling SASS to CSS.
+/.sass-cache

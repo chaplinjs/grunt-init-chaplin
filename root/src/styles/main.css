@@ -1,0 +1,13 @@
+{% if (bootstrap) { %}
+/* Bootstrap
+   ========= */
+
+/* Configuration
+   ------------- */
+/* Override any bootstrap variables here. */
+
+/* Modules
+   ------- */
+/* Uncomment bootstrap-responsive to enable responsive styling. */
+@import "../components/styles/bootstrap/bootstrap.css";
+/* @import "../components/styles/bootstrap/bootstrap.css"; */{% } %}

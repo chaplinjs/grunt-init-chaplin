@@ -1,0 +1,56 @@
+
+// Compass
+// =======
+
+// Modules
+// -------
+@import "compass";
+{% if (bootstrap) { %}
+// Bootstrap
+// =========
+
+// Configuration
+// -------------
+// Override any bootstrap variables here.
+$iconSpritePath: "../components/images/bootstrap-sass/glyphicons-halflings.png";
+$iconWhiteSpritePath: "../components/images/bootstrap-sass/glyphicons-halflings-white.png";
+
+// Modules
+// -------
+// All of bootstrap is pre-enabled; disable selectively any unwanted features
+// to reduce the size of the compiled stylesheets.
+@import "../components/styles/bootstrap-sass/variables";
+@import "../components/styles/bootstrap-sass/mixins";
+@import "../components/styles/bootstrap-sass/reset";
+@import "../components/styles/bootstrap-sass/scaffolding";
+@import "../components/styles/bootstrap-sass/grid";
+@import "../components/styles/bootstrap-sass/layouts";
+@import "../components/styles/bootstrap-sass/type";
+@import "../components/styles/bootstrap-sass/code";
+@import "../components/styles/bootstrap-sass/forms";
+@import "../components/styles/bootstrap-sass/tables";
+@import "../components/styles/bootstrap-sass/dropdowns";
+@import "../components/styles/bootstrap-sass/wells";
+@import "../components/styles/bootstrap-sass/component-animations";
+@import "../components/styles/bootstrap-sass/close";
+@import "../components/styles/bootstrap-sass/buttons";
+@import "../components/styles/bootstrap-sass/button-groups";
+@import "../components/styles/bootstrap-sass/alerts";
+@import "../components/styles/bootstrap-sass/navs";
+@import "../components/styles/bootstrap-sass/navbar";
+@import "../components/styles/bootstrap-sass/breadcrumbs";
+@import "../components/styles/bootstrap-sass/pagination";
+@import "../components/styles/bootstrap-sass/pager";
+@import "../components/styles/bootstrap-sass/modals";
+@import "../components/styles/bootstrap-sass/tooltip";
+@import "../components/styles/bootstrap-sass/popovers";
+@import "../components/styles/bootstrap-sass/thumbnails";
+@import "../components/styles/bootstrap-sass/media";
+@import "../components/styles/bootstrap-sass/labels-badges";
+@import "../components/styles/bootstrap-sass/progress-bars";
+@import "../components/styles/bootstrap-sass/accordion";
+@import "../components/styles/bootstrap-sass/carousel";
+@import "../components/styles/bootstrap-sass/hero-unit";
+@import "../components/styles/bootstrap-sass/utilities";
+@import "../components/styles/bootstrap-sass/sprites";
+@import "../components/styles/bootstrap-sass/responsive";{% } %}
