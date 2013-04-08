@@ -8,12 +8,13 @@ module.exports = Chaplin.Application.extend({
   initialize: function() {
     // Initialize chaplin core
     this.initDispatcher({controllerSuffix: ''});
+    this.initRouter(routes);
+    this.initComposer();
     this.initLayout();
     this.initMediator();
-    this.initControllers();
 
-    // Register all routes and start routing
-    this.initRouter(routes);
+    // Start routing
+    this.startRouting();
 
     // Freeze the object instance; prevent further changes
     if (Object.freeze) {
@@ -24,10 +25,6 @@ module.exports = Chaplin.Application.extend({
   initMediator: function() {
     // Attach with semi-globals here.
     Chaplin.mediator.seal();
-  },
-
-  initControllers: function() {
-    // Instantiate any persistent controllers here.
   }
 
 });

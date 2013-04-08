@@ -193,7 +193,7 @@ exports.template = function(grunt, init, done) {
       'backbone': '0.9.x',
       'requirejs': '2.1.x',
       'almond': '0.2.x',
-      'chaplin': '0.7.x'
+      'chaplin': '0.8.x'
     };
 
     if (props.templateLanguage === 'handlebars') {
