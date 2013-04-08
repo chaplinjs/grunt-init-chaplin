@@ -1,0 +1,35 @@
+{
+  "name": "generator-chaplin",
+  "version": "0.1.0",
+  "description": "Chaplin.js generator for scaffolding out a chaplin.js web app",
+  "keywords": [
+    "yeoman-generator",
+    "chaplin",
+    "chaplinjs"
+  ],
+  "homepage": "https://github.com/chaplinjs/generator-chaplin",
+  "bugs": "https://github.com/chaplinjs/generator-chaplin/issues",
+  "main": "app/index.coffee",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chaplinjs/generator-chaplin.git"
+  },
+  "scripts": {
+  },
+  "dependencies": {
+    "yeoman-generator": "~0.10.0"
+  },
+  "devDependencies": {
+    "matchdep": "0.1.x",
+    "grunt": "0.4.x",
+    "grunt-contrib-coffee": "0.6.x"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "licenses": [
+    {
+      "type": "BSD"
+    }
+  ]
+}
