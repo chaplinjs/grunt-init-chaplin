@@ -118,6 +118,7 @@ module.exports = (grunt) ->
     haml:
       options:
         uglify: true
+        placement: 'amd'
         language: 'coffee'
         customHtmlEscape: 'haml.escape'
         customPreserve: 'haml.preserve'
