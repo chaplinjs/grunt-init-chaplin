@@ -116,7 +116,7 @@ exports.template = function(grunt, init, done) {
       'grunt-contrib-mincss': '0.4.0rc7',
       'grunt-contrib-htmlmin': '0.1.1rc7',
       'grunt-bower-task': '0.1.x',
-      'grunt-urequire': '~0.4.2',
+      'grunt-urequire': '0.1.x',
       'lodash': '0.10.x',
       'connect-url-rewrite': '0.1.x'
     };
