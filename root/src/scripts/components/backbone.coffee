@@ -1,6 +1,6 @@
 'use strict'
 
-require 'depend!../components/scripts/backbone/backbone[jquery,underscore]'
+require 'depend!../bower_components/scripts/backbone/backbone[jquery,underscore]'
 
 # Ensure we're working with an unmodified version of Backbone.
 Backbone = window.Backbone.noConflict()

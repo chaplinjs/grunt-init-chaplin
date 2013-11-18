@@ -1,6 +1,6 @@
 'use strict';
 
-require('../components/scripts/jquery/jquery');
+require('../bower_components/scripts/jquery/jquery');
 
 // Ensure we're working with an unmodified version of jQuery.
 var jQuery = window.jQuery.noConflict();
