@@ -18,8 +18,8 @@ module.exports = function(grunt) {
     clean: {
       build: 'build',
       temp: 'temp',
-      bower: 'components',
-      components: 'src/components'
+      bower: 'bower_components',
+      components: 'src/bower_components'
     },
 
     // Wrangling
@@ -58,7 +58,7 @@ module.exports = function(grunt) {
           processContent: function(content, name) {
             if (/bootstrap/.test(name) && /\.css$/.test(name)) {
               return content.replace(/..\/img\/glyphicons/g,
-                '/components/images/bootstrap/glyphicons');
+                '/bower_components/images/bootstrap/glyphicons');
             }
             return content;
           }
@@ -84,7 +84,7 @@ module.exports = function(grunt) {
     bower: {
       install: {
         options: {
-          targetDir: './src/components',
+          targetDir: './src/bower_components',
           cleanup: true,
           install: true
         }

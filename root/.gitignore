@@ -8,8 +8,8 @@
 /build
 
 # Directory that bower stores downloaded components.
-/components
-/src/components
+/bower_components
+/src/bower_components
 
 # Generated from compiling SASS to CSS.
 /.sass-cache
