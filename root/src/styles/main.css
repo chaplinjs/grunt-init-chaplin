@@ -9,5 +9,5 @@
 /* Modules
    ------- */
 /* Uncomment bootstrap-responsive to enable responsive styling. */
-@import "../components/styles/bootstrap/bootstrap.css";
-/* @import "../components/styles/bootstrap/bootstrap.css"; */{% } %}
+@import "../bower_components/styles/bootstrap/bootstrap.css";
+/* @import "../bower_components/styles/bootstrap/bootstrap.css"; */{% } %}
