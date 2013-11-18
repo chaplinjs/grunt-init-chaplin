@@ -184,12 +184,12 @@ exports.template = function(grunt, init, done) {
     // Gather client-side, browser dependencies
     // Collect the standard ones.
     var dependencies = {
-      'jquery': '1.8.x',
-      'underscore': '1.4.x',
-      'backbone': '0.9.x',
+      'jquery': '1.9.x',
+      'underscore': '1.5.x',
+      'backbone': '1.1.x',
       'requirejs': '2.1.x',
       'almond': '0.2.x',
-      'chaplin': '0.8.x'
+      'chaplin': '0.11.x'
     };
 
     if (props.templateLanguage === 'handlebars') {
