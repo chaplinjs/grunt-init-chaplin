@@ -1,6 +1,6 @@
 'use strict';
 
-require('../components/scripts/underscore/underscore');
+require('../bower_components/scripts/underscore/underscore');
 
 // Ensure we're working with an unmodified version of underscore.
 var _ = window._.noConflict();

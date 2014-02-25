@@ -18,8 +18,8 @@ module.exports = (grunt) ->
     clean:
       build: 'build'
       temp: 'temp'
-      bower: 'components'
-      components: 'src/components'
+      bower: 'bower_components'
+      components: 'src/bower_components'
 
     # Wrangling
     # ---------
@@ -78,7 +78,7 @@ module.exports = (grunt) ->
     bower:
       install:
         options:
-          targetDir: './src/components'
+          targetDir: './src/bower_components'
           cleanup: true
           install: true
 

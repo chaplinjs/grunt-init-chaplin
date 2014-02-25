@@ -112,10 +112,10 @@ exports.template = function(grunt, init, done) {
       'grunt-contrib-copy': '0.4.0rc7',
       'grunt-contrib-connect': '0.1.1rc6',
       'grunt-contrib-watch': '0.2.0rc7',
-      'grunt-requirejs': '0.3.x',
+      'grunt-requirejs': '~0.4.x',
       'grunt-contrib-mincss': '0.4.0rc7',
       'grunt-contrib-htmlmin': '0.1.1rc7',
-      'grunt-bower-task': '0.1.x',
+      'grunt-bower-task': '0.3.x',
       'grunt-urequire': '~0.4.2',
       'lodash': '0.10.x',
       'connect-url-rewrite': '0.1.x'
@@ -139,12 +139,10 @@ exports.template = function(grunt, init, done) {
     switch (props.templateLanguage) {
     case 'haml':
       devDependencies['grunt-haml'] = '0.3.x';
+      break;
 
     case 'handlebars':
-      // Waiting on a pull request to add modular AMD
-      // See: https://github.com/gruntjs/grunt-contrib-handlebars/pull/24
-      devDependencies['grunt-contrib-handlebars'] =
-        'git://github.com/concordusapps/grunt-contrib-handlebars.git';
+      devDependencies['grunt-contrib-handlebars'] = '~0.6.0';
       break;
     }
 
@@ -186,12 +184,12 @@ exports.template = function(grunt, init, done) {
     // Gather client-side, browser dependencies
     // Collect the standard ones.
     var dependencies = {
-      'jquery': '1.8.x',
-      'underscore': '1.4.x',
-      'backbone': '0.9.x',
+      'jquery': '1.9.x',
+      'underscore': '1.5.x',
+      'backbone': '1.1.x',
       'requirejs': '2.1.x',
       'almond': '0.2.x',
-      'chaplin': '0.8.x'
+      'chaplin': '0.11.x'
     };
 
     if (props.templateLanguage === 'handlebars') {
@@ -249,8 +247,8 @@ exports.template = function(grunt, init, done) {
       }
     }
 
-    // Generate a component.json file.
-    init.writePackageJSON('component.json', {
+    // Generate a bower.json file.
+    init.writePackageJSON('bower.json', {
       name: props.name,
       version: props.version,
       dependencies: dependencies
